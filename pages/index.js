@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Header } from "../components";
+import { Header, Banner } from "../components";
 
 export default function Home() {
 	return (
@@ -9,7 +9,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Header />
-			<h1>AirBNB-Clone</h1>
+			<Banner />
 		</div>
 	);
 }
