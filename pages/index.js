@@ -1,7 +1,7 @@
 import Head from "next/head";
-import { Header, Banner } from "../components";
+import { Header, Banner, SmallCard } from "../components";
 
-export default function Home({ exploreData }) {
+export default function Home({ exploreData, cardsData }) {
 	return (
 		<div className="min-h-screen">
 			<Head>
@@ -15,9 +15,16 @@ export default function Home({ exploreData }) {
 					<h2 className="text-4xl font-semibold pb-5">
 						Explore Nearby
 					</h2>
-					{exploreData?.map((item) => (
-						<h1>{item.location}</h1>
-					))}
+					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+						{exploreData?.map((item) => (
+							<SmallCard
+								key={item.index}
+								img={item.img}
+								location={item.location}
+								distance={item.distance}
+							/>
+						))}
+					</div>
 				</section>
 			</main>
 		</div>
@@ -29,9 +36,13 @@ export async function getStaticProps() {
 		(res) => res.json()
 	);
 
+	const cardsData = await fetch("https://links.papareact.com/zp1").then(
+		(res) => res.json()
+	);
 	return {
 		props: {
 			exploreData,
+			cardsData,
 		},
 	};
 }
