@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Header, Banner, SmallCard } from "../components";
+import { Header, Banner, SmallCard, MediumCard } from "../components";
 
 export default function Home({ exploreData, cardsData }) {
 	return (
@@ -22,6 +22,20 @@ export default function Home({ exploreData, cardsData }) {
 								img={item.img}
 								location={item.location}
 								distance={item.distance}
+							/>
+						))}
+					</div>
+				</section>
+				<section>
+					<h2 className="text-4xl font-semibold py-8">
+						Live Anywhere
+					</h2>
+					<div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -mt-3">
+						{cardsData?.map((card) => (
+							<MediumCard
+								key={card.index}
+								img={card.img}
+								title={card.title}
 							/>
 						))}
 					</div>
