@@ -5,6 +5,7 @@ import {
 	SmallCard,
 	MediumCard,
 	LargeCard,
+	Footer,
 } from "../components";
 
 export default function Home({ exploreData, cardsData }) {
@@ -53,6 +54,7 @@ export default function Home({ exploreData, cardsData }) {
 					buttonText="Get Inspired"
 				/>
 			</main>
+			<Footer />
 		</div>
 	);
 }
