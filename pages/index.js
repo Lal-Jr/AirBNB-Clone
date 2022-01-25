@@ -1,5 +1,11 @@
 import Head from "next/head";
-import { Header, Banner, SmallCard, MediumCard } from "../components";
+import {
+	Header,
+	Banner,
+	SmallCard,
+	MediumCard,
+	LargeCard,
+} from "../components";
 
 export default function Home({ exploreData, cardsData }) {
 	return (
@@ -40,6 +46,12 @@ export default function Home({ exploreData, cardsData }) {
 						))}
 					</div>
 				</section>
+				<LargeCard
+					img="https://links.papareact.com/4cj"
+					title="The Greatest Outdoors"
+					description="Wishlists curated by AirBNB."
+					buttonText="Get Inspired"
+				/>
 			</main>
 		</div>
 	);
