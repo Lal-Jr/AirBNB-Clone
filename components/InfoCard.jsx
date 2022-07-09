@@ -32,8 +32,12 @@ const InfoCard = ({
 					{description}
 				</p>
 				<div className="flex justify-between items-end pt-5">
-					<p className="flex items-center">
-						<StarIcon className="h-5 text-red-400" /> {star}
+					<p className="flex items-center font-medium">
+						<StarIcon className="h-5 text-red-400" />{" "}
+						<>
+							{star} (
+							{Math.floor(Math.random() * (999 - 100 + 1) + 100)})
+						</>
 					</p>
 					<div>
 						<p className="text-lg font-semibold pb-2 lg:text-2xl">

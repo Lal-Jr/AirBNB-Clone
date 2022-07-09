@@ -19,12 +19,12 @@ const Search = ({ searchResults }) => {
 			</Head>
 			<div>
 				<Header
-					placeholder={`${location} | ${range} | ${noOfGuests} Guests`}
+					placeholder={`${location} | ${range} | ${noOfGuests} Guest(s)`}
 				/>
 				<main className="flex">
 					<section className="flex-grow flex flex-col items-center pt-14 pb-7 px-6">
-						<p className="text-xs">
-							300+ Stays - {range} - {noOfGuests} number of guests
+						<p className="text-xs font-semibold text-gray-400">
+							300+ Stays - {range} - {noOfGuests} No. of Guest(s)
 						</p>
 						<h1 className="text-3xl font-semibold mt-2 mb-6">
 							Stays in {location}
