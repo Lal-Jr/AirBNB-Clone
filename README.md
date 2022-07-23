@@ -2,7 +2,7 @@
   <img src="https://github.com/Lal-Jr/AirBNB-Clone/blob/67e3ec5e7e33817749b0e3c14c50e661bf160b9a/public/Banner.png" alt="Banner" />
   <br />
   <br />
-  GraphQL-GraphCMS-Blog
+  AirBNB-Clone
   <br />
   
   [![Lal-Jr - AirBNB-Clone](https://img.shields.io/static/v1?label=Lal-Jr&message=AirBNB-Clone&color=blue&logo=github)](https://github.com/Lal-Jr/AirBNB-Clone "Go to GitHub repo")
